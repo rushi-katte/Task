@@ -1,0 +1,125 @@
+{
+  "signup": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "username": "",
+      "email": "",
+      "password": "",
+      "id": 2
+    },
+    {
+      "username": "sxsx",
+      "email": "xsxs",
+      "password": "xsx",
+      "id": 3
+    },
+    {
+      "username": "www",
+      "email": "ww",
+      "password": "www",
+      "id": 4
+    },
+    {
+      "username": "Rushi",
+      "email": "rushi@gmail.com",
+      "password": "Rushi",
+      "id": 5
+    },
+    {
+      "username": "fdsff",
+      "email": "dd@G",
+      "password": "dddddd",
+      "id": 6
+    },
+    {
+      "username": "ss",
+      "email": "s@ga",
+      "password": "ssssss",
+      "id": 7
+    },
+    {
+      "username": "Rushi",
+      "email": "rushi.katte.98@gmail.com",
+      "password": "Rushi1198",
+      "id": 8
+    },
+    {
+      "username": "pavan",
+      "email": "pavan@gn",
+      "password": "pavan1",
+      "id": 9
+    }
+  ],
+  "register": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "firstName": "",
+      "age": "",
+      "interests": "",
+      "addressType": "",
+      "address1": "",
+      "address2": "",
+      "companyAddress1": "",
+      "companyAddress2": "",
+      "id": 2
+    },
+    {
+      "firstName": "",
+      "age": "",
+      "interests": "",
+      "addressType": "",
+      "address1": "",
+      "address2": "",
+      "companyAddress1": "",
+      "companyAddress2": "",
+      "id": 3
+    },
+    {
+      "firstName": "",
+      "age": "",
+      "interests": "",
+      "addressType": "home",
+      "address1": "",
+      "address2": "",
+      "companyAddress1": "",
+      "companyAddress2": "",
+      "id": 4
+    },
+    {
+      "firstName": "",
+      "age": "",
+      "interests": "",
+      "addressType": "",
+      "address1": "",
+      "address2": "",
+      "companyAddress1": "",
+      "companyAddress2": "",
+      "id": 5
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "Name": "katte",
+      "email": "rushi2.katte.98@gmail.com",
+      "phoneNumber": 666666,
+      "department": "Collection",
+      "id": 2
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

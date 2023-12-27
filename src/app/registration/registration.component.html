@@ -1,0 +1,41 @@
+<p>registration works!</p>
+<div class="container card-body"
+><form [formGroup]="registrationForm" (ngSubmit)="onSubmit(registrationForm)" class="mt-4">
+    <div class="mb-3">
+      <label for="firstName" class="form-label">First Name:</label>
+      <input type="text" id="firstName" formControlName="firstName" class="form-control">
+      <div *ngIf="registrationForm.get('firstName').invalid && registrationForm.get('firstName').touched" class="invalid-feedback">
+        <div *ngIf="registrationForm.get('firstName').errors.required">First Name is required.</div>
+        <div *ngIf="registrationForm.get('firstName').errors.pattern">Only alphabetic characters are allowed and the length should not exceed 20 characters.</div>
+      </div>
+     
+    </div>
+    <div class="mb-3">
+      <label for="age" class="form-label">Select Age:</label>
+      <input type="range" id="age" formControlName="age" class="form-range" min="18" max="100">
+      <span>{{ registrationForm.get('age').value }}</span>
+    </div>
+    <div  *ngIf="isshow" class="mb-3">
+      <label for="interests" class="form-label">Interests:</label>
+      <input type="text" id="interests" formControlName="interests" class="form-control"> <br><button type="button" (click)="removeInterest()" class="btn-close btn alert-danger">removeInterest</button>
+    </div>
+      
+    <div class="mb-3">
+      <label for="addressType" class="form-label">Address Type:</label>
+      <select id="addressType" formControlName="addressType" class="form-select">
+        <option value="home">Home</option>
+        <option value="company">Company</option>
+      </select>
+      <div *ngIf="registrationForm.get('addressType').value === 'home'" > Address-1</div>
+      <input *ngIf="registrationForm.get('addressType').value === 'home'"  type="text" formControlName="address1" class="form-control">
+      <div *ngIf="registrationForm.get('addressType').value === 'home'" > Address-2</div>
+      <input *ngIf="registrationForm.get('addressType').value === 'home'" type="text" formControlName="address2" class="form-control">
+      <div *ngIf="registrationForm.get('addressType').value === 'company'">Company Address-1 </div>
+      <input *ngIf="registrationForm.get('addressType').value === 'company'" type="text" formControlName="companyAddress1" class="form-control">
+      <div *ngIf="registrationForm.get('addressType').value === 'company'">Company Address-2</div>
+      <input *ngIf="registrationForm.get('addressType').value === 'company'" type="text" formControlName="companyAddress2" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button><br>
+  </form><br>
+  </div>
+  

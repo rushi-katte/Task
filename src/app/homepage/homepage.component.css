@@ -1,0 +1,24 @@
+
+.background-image-container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../assets/preview-ed.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .centered-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .centered-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
